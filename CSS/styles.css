@@ -1,0 +1,226 @@
+*{box-sizing:border-box;}
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+h1{font-size:3.5em;}
+h2{font-size:2.7em;}
+h3{font-size:2em;}
+p{font-size:1.25em;}
+ul{list-style:none}
+button{
+    font-size:1.25em;
+    font-weight:bold;
+    padding:15px 20px;
+    border-radius:10px;
+    border:2px solid rgba(0,0,0,0.3);
+    box-shadow:2px 2px 10px rgba(0,0,0,0.5);
+    color:#fff;
+    background-color:blueviolet;
+}
+button:active{
+    background-color:rgb(64,14,110);
+}
+.container{
+    max-width:1400px;
+    margin:auto;
+}
+header{
+    background-color:rgb(235,235,235);
+}
+header .container{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+header .logo{
+    margin:0;
+    padding:30px 25px;
+    font-size:1.5em;
+    font-weight:bold;
+    color:#000;
+}
+header .blueviolet{
+    color:blueviolet;
+}
+header nav{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    padding-bottom:20px;
+}
+header a{
+    padding:15px 20px;
+    text-decoration:none;
+    font-size:1.25em;
+    font-weight:bold;
+    color:#000;
+}
+a:active{
+    color:blueviolet;
+}
+#principal-content{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../assets/images/rascacielos-nueva-york.jpg),no-repeat;
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+}
+#quienes-somos{
+    padding:200px 15px;
+    text-align:center;
+}
+#quienes-somos h2{
+    color:blueviolet;
+}
+#quienes-somos p{
+    font-weight:bold;
+}
+#services{
+    background-color:#333;
+    text-align:center;
+    color:#fff;
+}
+#services .container{
+    padding:60px 25px;
+}
+#services .title-container{
+    margin-top:0;
+}
+#services p{
+    display:none;
+}
+#services .card{
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    margin-bottom:20px;
+    padding:100px 25px;
+    border:5px solid #000;
+}
+#services .card-1{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../assets/images/burger.jpg);
+}
+#services .card-2{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../assets/images/churros.jpg);
+}
+#services .card-3{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../assets/images/soft-drink.jpg);
+}
+#beneficios .container{
+    padding:200px 15px;
+    margin-right:50px;
+    text-align:center;
+}
+#beneficios li{
+    margin-bottom:35px;
+    font-size:1.25em;
+    font-weight:bold;
+}
+#principal-content2{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:200px 15px;
+    background:linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../assets/images/rascacielos-nueva-york.jpg),no-repeat;
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+}
+@media screen and (min-width:725px){
+    header{
+        position:fixed;
+        width:100%;
+    }
+    header .container{
+        flex-direction:row;
+        justify-content:space-between;
+    }
+    header nav{
+        flex-direction:row;
+        padding-bottom:0;
+        padding-right:15px;
+    }
+    #quienes-somos .container{
+        display:flex;
+        justify-content:center;
+    }
+    #quienes-somos .text-container{
+        width:50%;
+        max-width:600px;
+        text-align:initial;
+        padding-left:10px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        
+    }
+    #quienes-somos .img-container{
+        width:650px;
+        height:650px;
+        border-radius:10px;
+        background-image:url(../assets/images/burger.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
+    }
+    #quienes-somos h2{
+        margin-top:0;
+    }
+    #services .cards-container{
+        display:flex;
+        justify-content:center;
+    }
+    #services .card{
+        border:2.5px solid rgb(164, 84, 238);
+        background-repeat:no-repeat;
+        background-size:100% 220px;
+        background-position-y:0;
+        background-color:rgb(27, 5, 48);
+        border-radius:10px;
+        margin:0 20px;
+    }
+    .card-1{background-image:linear-gradient(
+        0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)
+    ),url(../assets/images/burguer-2.jpg);
+    }
+    .card-2{background-image:linear-gradient(
+        0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)
+    ),url(../assets/images/churros-2.jpg);
+    }
+    .card-3{background-image:linear-gradient(
+        0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)
+    ),url(../assets/images/soft-drink-2.jpg);
+    }
+
+    #services p{
+        padding-top:80px;
+        display:block;
+    }
+    #beneficios .container{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    #beneficios .img-container{
+        width:650px;
+        height:600px;
+        border-radius:10px;
+        background-image:url(../assets/images/fries.jpg);
+        background-size:cover;
+        background-position:center;
+    }
+    #principal-content h1{
+        font-size:100px;
+    }
+    #principal-content2 h2{
+        font-size:100px;
+    }
+}
